@@ -1,59 +1,66 @@
-# DezlumbranteProjetoPi
+# Dezlumbrante - E-commerce de Cosméticos Acessíveis
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
+## 💄 Sobre o Projeto
 
-## Development server
+Dezlumbrante é um Projeto Integrador (PI) que visa a criação de uma plataforma tecnológica completa (full stack) para uma marca inovadora de cosméticos, com foco em maquiagem. Nosso diferencial é democratizar a beleza, oferecendo todos os itens do catálogo a um preço fixo e acessível de **R$ 10,00**.  O objetivo é desenvolver uma solução robusta, escalável e capaz de provar a viabilidade técnica e comercial desse modelo de negócio de alto volume.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🛠️ Tecnologias Utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+| Camada      | Tecnologia           | Objetivo                                                                 |
+|-------------|---------------------|-------------------------------------------------------------------------|
+| Front-end   | Angular             | Desenvolvimento de uma interface moderna, responsiva e intuitiva para o catálogo e jornada de compra. |
+| Estilização | HTML & CSS          | Design limpo e atraente, focado na experiência do usuário (UX) e identidade visual da marca Dezlumbrante. |
+| Back-end    | Java & Spring Boot  | Criação de API RESTful de alto desempenho para autenticação, controle de estoque, regras de negócio e processamento de pedidos. |
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🎯 Objetivo Principal
 
-```bash
-ng generate component component-name
-```
+Demonstrar a integração eficaz entre um front-end dinâmico e um back-end seguro e performático. O projeto serve como prova de conceito para uma solução de e-commerce que suporta um mercado de alto volume, com foco em valor e acessibilidade.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🏗️ Estrutura do Projeto
 
-## Building
+O projeto está dividido em dois repositórios principais:
 
-To build the project run:
+- [`dezlumbrante-frontend`](https://github.com/seuusuario/dezlumbrante-frontend) (Este repositório): Contém o código fonte da aplicação Angular.
+- [`dezlumbrante-backend`](https://github.com/seuusuario/dezlumbrante-backend) (Em desenvolvimento): Contém a API Java/Spring Boot.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🚀 Como Rodar o Projeto (Front-end)
 
-## Running unit tests
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seuusuario/dezlumbrante-frontend.git
+    cd dezlumbrante-frontend
+    ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-```bash
-ng test
-```
+3. Execute a aplicação:
+    ```bash
+    ng serve
+    ```
 
-## Running end-to-end tests
+4. Acesse no navegador:
+    ```
+    http://localhost:4200
+    ```
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 📋 Funcionalidades Principais
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- Catálogo completo de cosméticos com preço fixo de R$10,00
+- Navegação fluida e responsiva entre categorias e produtos
+- Adição de produtos ao carrinho e finalização de compra
+- Interface intuitiva e visual alinhado com a marca Dezlumbrante
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
