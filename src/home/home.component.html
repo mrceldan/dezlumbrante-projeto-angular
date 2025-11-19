@@ -1,0 +1,101 @@
+<section class="cabecalho">
+  <div class="cabecalho-conteudo">
+    <a routerLink="/" class="marca">
+      <span class="marca-texto">DEZLUMBRANTE</span>
+    </a>
+    <nav class="navegacao">
+      <button class="link-nav" (click)="openPopup('buy')">Comprar</button>
+      <button class="link-nav" (click)="openPopup('search')">Buscar</button>
+      <button class="link-nav" (click)="openPopup('cart')">Carrinho(0)</button>
+      <a routerLink="/login" class="link-nav link-conta">Conta</a>
+    </nav>
+    
+<div class="popup popup-buy" *ngIf="active === 'buy'">
+  <button class="close-btn" (click)="closePopup()">×</button>
+  <h3 class="popup-title">Produtos</h3>
+
+  <div class="popup-content">
+    <div class="popup-item">
+      <img src="boca.jpeg">
+      <p>Boca</p>
+    </div>
+
+    <div class="popup-item">
+      <img src="olho.jpeg">
+      <p>Olhos</p>
+    </div>
+
+    <div class="popup-item">
+      <img src="pele.jpeg">
+      <p>Pele</p>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup-search" *ngIf="active === 'search'">
+  <button class="close-btn" (click)="closePopup()">×</button>
+  <h3 class="popup-title">Buscar Produto</h3>
+
+  <input type="text" class="popup-input" placeholder="Digite aqui...">
+</div>
+
+<div class="popup popup-cart" *ngIf="active === 'cart'">
+  <button class="close-btn" (click)="closePopup()">×</button>
+
+  <h3 class="popup-title">Carrinho</h3>
+  <p>Seu carrinho está vazio.</p>
+
+  <button class="popup-fin">Finalizar Compra</button>
+</div>
+
+
+<div class="popup-backdrop" *ngIf="active" (click)="closePopup()"></div>
+
+  </div>
+</section>
+
+<section class="banner">
+  <img src="header.jpg" alt="Mulher passando maquiagem" class="banner-img">
+</section>
+
+
+<section class="categorias">
+  <h2>PRONTO PARA SE PRODUZIR</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="img-container">
+        <img src="boca.jpeg" alt="Boca">
+      </div>
+      <p>Boca</p>
+    </div>
+    <div class="card">
+      <div class="img-container">
+        <img src="olho.jpeg" alt="Olhos">
+      </div>
+      <p>Olhos</p>
+    </div>
+    <div class="card">
+      <div class="img-container">
+        <img src="pele.jpeg" alt="Pele">
+      </div>
+      <p>Pele</p>
+    </div>
+  </div>
+</section>
+
+<section class="card-final">
+  <div class="imagem-card">
+    <img src="card.jpg" alt="Modelo de maquiagem">
+  </div>
+  <div class="texto-card">
+    <h2>DEZLUMBRANTE</h2>
+    <p>Realce sua beleza com elegância, economia e praticidade.</p>
+  </div>
+</section>
+
+
+
+
+<footer class="rodape">
+  <p>© 2025 DEZLUMBRANTE - Beleza que encanta!</p>
+</footer>
