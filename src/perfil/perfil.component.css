@@ -9,6 +9,107 @@
   position: fixed;
 }
 
+.titulo-site {
+  font-family: "Literata", serif;
+  color: #EBA1B8;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  text-decoration: none; 
+  display: inline-block;
+}
+
+.perfil-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo {
+  color: #D683A2;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding: 35px;
+}
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.perfil-foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: -25px;
+  align-items: center;
+}
+
+.perfil-info {
+  text-align: left;
+}
+
+.perfil-info p {
+  color: #EBA1B8;
+  font-size: 20px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.perfil-opcoes {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.perfil-opcao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1c6d8;
+  cursor: pointer;
+}
+
+.perfil-opcao span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #D683A2;
+}
+
+
+.seta {
+  font-size: 18px;
+  color: #D683A2;
+}
+
+
+.rodape {
+  background-color: #EBA1B8;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+
+.linha-rosa {
+  width: 100%;
+  height: 2px; 
+  background: #EBA1B8; 
+  margin-top: 20px;
+}
+
 .rodape {
   width: 100%;
   background-color: #EBA1B8;
@@ -19,3 +120,8 @@
   bottom: 0;
   left: 0;
 }
+
+.rodape p{
+    color: white;
+}
+

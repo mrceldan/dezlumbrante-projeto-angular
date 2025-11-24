@@ -229,10 +229,6 @@ button.link-nav {
   border-radius: 10px;
 }
 
-.popup-search {
-  width: 360px;
-}
-
 .popup-input {
   width: 100%;
   padding: 12px;
@@ -402,6 +398,19 @@ button.link-nav {
   font-size: small;
   font-weight: 100;
 }
+
+.finalizar-btn{
+  width: 100%;
+  padding: 8px;
+  color: #EBA1B8;
+  border: none;
+  border-radius: 8px;
+  margin-top: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 
 @keyframes popupShow {
   0% { opacity: 0; transform: translate(-50%, -20px); }

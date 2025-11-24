@@ -69,18 +69,18 @@ label {
 
 input {
   border: 1px solid #EBA1B8;
-  border-radius: 10px;
+  border-radius: 10px;  
   padding: 8px;
   outline: none;
 }
 
 button {
-  background-color: #EBA1B8;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  border-radius: 15px;
-  cursor: pointer;
+    background-color: #EBA1B8;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .link {
