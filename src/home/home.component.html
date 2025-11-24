@@ -1,0 +1,173 @@
+<section class="cabecalho">
+  <div class="cabecalho-conteudo">
+    <a routerLink="/" class="marca">
+      <span class="marca-texto">DEZLUMBRANTE</span>
+    </a>
+
+    <nav class="navegacao">
+      <button class="link-nav" (click)="openPopup('buy')">Comprar</button>
+      <button class="link-nav" (click)="openPopup('cart')">Carrinho(0)</button>
+      <a routerLink="/login" class="link-nav link-conta">Conta</a>
+    </nav>
+  </div>
+</section>
+
+<!--COMPRAR-->
+<div class="popup popup-buy" *ngIf="active === 'buy'">
+  <button class="close-btn" (click)="closePopup()">×</button>
+
+  <button class="back-btn" *ngIf="category" (click)="category = null">
+    ← Voltar
+  </button>
+
+  <h3 class="popup-title" *ngIf="!category">Produtos</h3>
+
+  <div class="popup-content" *ngIf="!category">
+
+    <button class="popup-item" (click)="openCategory('boca')">
+      <img src="boca dois.jpeg">
+      <p>Boca</p>
+    </button>
+
+    <button class="popup-item" (click)="openCategory('olhos')">
+      <img src="olhos dois.jpeg">
+      <p>Olhos</p>
+    </button>
+
+    <button class="popup-item" (click)="openCategory('pele')">
+      <img src="pele dois.jpeg">
+      <p>Pele</p>
+    </button>
+
+  </div>
+
+  <!--BOCA -->
+  <div class="category-box" *ngIf="category === 'boca'">
+    <h3 class="popup-title">Boca</h3>
+    <h4>*Todos os produtos por 10 reais*</h4>
+
+    <div class="produtos-grid-5">
+      <div class="produto">
+        <img src="gloss brilho.jpeg">
+        <p>Gloss</p>
+        <button class="add-btn">+ Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="lapis labial.jpeg">
+        <p>Lapis Labial</p>
+        <button class="add-btn">+ Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="batom matte.jpeg">
+        <p>Batom Matte</p>
+        <button class="add-btn">+ Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="gloss labial.jpeg">
+        <p>Lip Oil Rosé</p>
+        <button class="add-btn">+ Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="batom l tres.jpeg">
+        <p>Batom Líquido</p>
+        <button class="add-btn">+ Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <!--OLHOS -->
+  <div class="category-box" *ngIf="category === 'olhos'">
+    <h3 class="popup-title">Olhos</h3>
+    <h4>*Todos os produtos por 10 reais*</h4>
+
+    <div class="produtos-grid-5">
+      <div class="produto"><img src="mascara.jpeg"><p>Máscara de Cílios Preto</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="delineador.jpeg"><p>Delineador Preto</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="paleta.jpeg"><p>Paleta de Maquiagem</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="lapis.jpeg"><p>Lápis de Olho Preto</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="gel.jpeg"><p>Gel para Sobrancelha</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+    </div>
+  </div>
+
+  <!--PELE -->
+  <div class="category-box" *ngIf="category === 'pele'">
+    <h3 class="popup-title">Pele</h3>
+    <h4>*Todos os produtos por 10 reais*</h4>
+
+    <div class="produtos-grid-5">
+      <div class="produto"><img src="base.jpeg"><p>Base Matte</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="corretivo.jpeg"><p>Corretivo</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="po.jpeg"><p>Pó Banana</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="blush.jpeg"><p>Blush Líquido</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+      <div class="produto"><img src="contorno bastap.jpeg"><p>Contorno</p><button class="add-btn">+ Adicionar ao Carrinho</button></div>
+    </div>
+  </div>
+</div>
+
+<!--CARRINHO -->
+<div class="popup popup-cart" *ngIf="active === 'cart'">
+  <button class="close-btn" (click)="closePopup()">×</button>
+
+  <h3 class="popup-title">Seu Carrinho</h3>
+
+  <div class="cart-content">
+    <p>Seu carrinho está vazio por enquanto 😄</p>
+  </div>
+
+  <button class="finalizar-btn">Finalizar Compra</button>
+</div>
+
+<!--FUNDO -->
+<div class="popup-backdrop" *ngIf="active" (click)="closePopup()"></div>
+
+
+<!--HOME-->
+<section class="banner">
+  <img src="header.jpg" alt="Mulher passando maquiagem" class="banner-img">
+</section>
+
+<section class="categorias">
+  <h2>PRONTO PARA SE PRODUZIR</h2>
+
+  <div class="cards">
+    <div class="card">
+      <div class="img-container">
+        <img src="boca.jpeg" alt="Boca">
+      </div>
+      <p>Boca</p>
+    </div>
+
+    <div class="card">
+      <div class="img-container">
+        <img src="olho.jpeg" alt="Olhos">
+      </div>
+      <p>Olhos</p>
+    </div>
+
+    <div class="card">
+      <div class="img-container">
+        <img src="pele.jpeg" alt="Pele">
+      </div>
+      <p>Pele</p>
+    </div>
+  </div>
+</section>
+
+<section class="card-final">
+  <div class="imagem-card">
+    <img src="card.jpg" alt="Modelo de maquiagem">
+  </div>
+
+  <div class="texto-card">
+    <h2>DEZLUMBRANTE</h2>
+    <p>Realce sua beleza com elegância, economia e praticidade.</p>
+  </div>
+</section>
+
+<footer class="rodape">
+  <p>© 2025 DEZLUMBRANTE - Beleza que encanta!</p>
+</footer>

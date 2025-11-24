@@ -1,0 +1,21 @@
+.cabecalho {
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: transparent; 
+  padding-top: 10px;
+  position: fixed;
+}
+
+.rodape {
+  width: 100%;
+  background-color: #EBA1B8;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
